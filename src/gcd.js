@@ -5,11 +5,12 @@
  * e.g. gcd(15, 10) => 5
  */
 function gcd(a, b) {
-  while (a !== 0) {
-    let temp = a
-    a = b % a
+  while (b !== 0) {
+    let temp = b
+    b = a % b
+    a = temp
   }
-  return b
+  return a
 }
 
-export default gcd
+export default gcd;
