@@ -9,9 +9,11 @@ function subtract(x, y) {
   if (x < y) {
     return y - x
   }
-
-  if (y < x) {
+  else if (y < x) {
     return x - y
+  }
+  else if (x == y) {
+    return 0
   }
 }
 
